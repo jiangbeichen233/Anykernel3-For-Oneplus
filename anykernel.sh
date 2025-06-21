@@ -8,6 +8,13 @@ set -e
 log() { echo -e "${Y}[$(date '+%T')] $1${N}"; }
 err() { echo -e "${R}ERROR: $1${N}" >&2; exit 1; }
 
+# ======= 版权声明 =======
+echo -e "${G}此内核来自酷安姜北尘 免费发布请勿盗用${N}"
+sleep 1
+
+log() { echo -e "${Y}[$(date '+%T')] $1${N}"; }
+err() { echo -e "${R}ERROR: $1${N}" >&2; exit 1; }
+
 # ========== 1. 环境准备 ==========
 [ "$(id -u)" -ne 0 ] && err "请以root权限运行"
 export PATH="/system/bin:$PATH"
