@@ -41,7 +41,13 @@ case $kernel_version in
 esac
 ui_print "内核构建者: 酷安@姜北尘"
 ui_print "免费发布请勿盗用"
+ui_print " "
 ui_print " " "  -> ksu_supported: $ksu_supported"
+ui_print " "
+ui_print "===== 安装完成！ ====="
+ui_print "欢迎加入TG内核交流群："
+ui_print "https://t.me/bckernel"
+ui_print " "
 $ksu_supported || abort "  -> Non-GKI device, abort."
 
 # boot install
